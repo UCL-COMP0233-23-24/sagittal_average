@@ -2,6 +2,9 @@ from argparse import ArgumentParser, ArgumentDefaultsHelpFormatter
 
 import numpy as np
 
+data_input = np.zeros((20, 20))
+data_input[-1, :] = 1
+np.savetxt("brain_sample.csv", data_input, fmt='%d', delimiter=',')
 
 def run_averages(file_input='brain_sample.csv', file_output='brain_average.csv'):
     """
@@ -32,3 +35,4 @@ if __name__ == "__main__":
     arguments = parser.parse_args()
 
     run_averages(arguments.file_input, arguments.file_output)
+
