@@ -1,0 +1,14 @@
+%%writefile sagittal_average/pyproject.toml
+
+[project]
+name = "Sagittal DIS team project"
+version = "0.1.0"
+
+[build-system]
+requires = ["setuptools", "setuptools_scm[toml]>=6.2", "wheel"]
+
+[tool.setuptools.packages.find]
+include = ["sagittal_brain*"]
+
+# Add setuptools_scm if you need to generate version numbers from the git hash
+#[tool.setuptools_scm]
