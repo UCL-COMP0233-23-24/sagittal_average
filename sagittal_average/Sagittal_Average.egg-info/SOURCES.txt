@@ -1,0 +1,16 @@
+.gitignore
+__init__.py
+brain_average.csv
+brain_sample.csv
+pyproject.toml
+sagittal_brain.py
+Sagittal_Average.egg-info/PKG-INFO
+Sagittal_Average.egg-info/SOURCES.txt
+Sagittal_Average.egg-info/dependency_links.txt
+Sagittal_Average.egg-info/entry_points.txt
+Sagittal_Average.egg-info/top_level.txt
+sagittal_brain.egg-info/PKG-INFO
+sagittal_brain.egg-info/SOURCES.txt
+sagittal_brain.egg-info/dependency_links.txt
+sagittal_brain.egg-info/top_level.txt
+tests/test_sagittal_average.py
