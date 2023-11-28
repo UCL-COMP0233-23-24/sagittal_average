@@ -1,0 +1,15 @@
+[project]
+name = "Sagittal_Average"
+version = "0.1.0"
+dependencies = [
+    "art",
+]
+
+[project.scripts]
+average = "sagittal_average.command:process"
+
+[build-system]
+requires = ["setuptools", "setuptools_scm[toml]>=6.2", "wheel"]
+
+[tool.setuptools.packages.find]
+include = ["Sagittal_Average*"]
