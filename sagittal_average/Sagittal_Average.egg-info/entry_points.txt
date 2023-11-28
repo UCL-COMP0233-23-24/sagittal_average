@@ -1,2 +1,2 @@
 [console_scripts]
-average = Sagittal_Average.command:process
+average = sagittal_average.command:process

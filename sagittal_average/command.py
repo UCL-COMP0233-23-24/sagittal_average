@@ -1,6 +1,6 @@
 from argparse import ArgumentParser, ArgumentDefaultsHelpFormatter
 import numpy as np
-from sagittal_average.sagittal_brain import run_averages
+from sagittal_brain import run_averages
 from art import art 
 
 
@@ -12,7 +12,7 @@ if __name__ == "__main__":
     parser.add_argument('--file_output', '-o', default="brain_average.csv",
                         help="Name of the output CSV file.")
     arguments = parser.parse_args()
-    message = average(arguments.file_input, arguments.file_output)
+    message = run_averages(arguments.file_input, arguments.file_output)
     print(art("cute face"), message)
 
     run_averages(arguments.file_input, arguments.file_output)
